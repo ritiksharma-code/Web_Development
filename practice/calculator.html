@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+
+
+<body>
+    <h1 style="text-align: center;">CALCULATOR</h1><br>
+    
+    <label for="num1"><b>Enter first number: </b></label><br>
+    <input type="text" id="num1" placeholder="Enter first number" required="required"><br><br>
+    <label for="num2"><b>Enter second Number: </b></label><br>
+    <input type="text" id="num2" placeholder="Enter second number" required="required"><br><br>
+    <button id="add"><b>add</b></button>&nbsp&nbsp <button id="Subtract"><b>Subtract</b></button>&nbsp&nbsp <button id ="Multiply"><b>Multiply</b></button>&nbsp&nbsp <button id = "divide"><b>Divide</b></button>&nbsp&nbsp  <button id="reset" ><b>Reset</b></button> <br><br>
+    <h2>Output</h2>
+    <textarea name="num3" id="num3" cols="20" rows="3"></textarea>
+
+
+    <script>
+        function add() {
+            let n1 = parseInt(document.getElementById("num1").value);
+            let n2 = parseInt(document.getElementById("num2").value);
+
+            let n3 = n1 + n2;
+            
+            document.getElementById("num3").value = "Addition is: " + n3;
+        }
+        function Subtract()
+        {
+            let n1 = parseInt(document.getElementById("num1").value);
+            let n2 = parseInt(document.getElementById("num2").value);
+            let n3 = n1 - n2;
+            document.getElementById("num3").value = "Subtraction is: " + n3;
+        }
+        function Multiply()
+        {
+            let n1 = parseInt(document.getElementById("num1").value);
+            let n2 = parseInt(document.getElementById("num2").value);
+            let n3 = n1 * n2;
+            document.getElementById("num3").value = "Multiplication is: " + n3;
+        }
+        function divide()
+        {
+            let n1 = parseInt(document.getElementById("num1").value);
+            let n2 = parseInt(document.getElementById("num2").value);
+            let n3 = n1/n2;
+            document.getElementById("num3").value = "Division is: " + n3;
+        }
+
+        document.getElementById("add").addEventListener("click", add);
+        document.getElementById("Subtract").addEventListener("click", Subtract);
+        document.getElementById("Multiply").addEventListener("click", Multiply);
+        document.getElementById("divide").addEventListener("click", divide);
+        document.getElementById("reset").addEventListener("click",reset);
+        
+
+        function reset() {
+            document.getElementById("num1").value="";
+            document.getElementById("num2").value="";
+            document.getElementById("num3").value="";
+        }
+
+
+    </script>
+
+
+</body>
+
+
+</html>
