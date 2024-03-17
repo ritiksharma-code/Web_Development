@@ -1,0 +1,31 @@
+/* .card{
+    color: #222222;
+    background: lightgrey;
+    width: 500px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+
+    border: 8px solid blue;
+    border-radius: 30px;
+
+    padding-left: 10px;
+    padding-right: 90px;
+    padding-top: 100px;
+    padding-bottom: 10px;
+
+} */
+
+/* The Box Model: */
+
+.card{
+    color: #222222;
+    background: lightgrey;
+    display: block;
+    margin-top: 40px;
+    margin-left: 130px;
+    margin-right: 130px;
+    padding: 20px;
+    border: 4px solid #222222;
+    border-radius: 20px;
+}

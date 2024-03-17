@@ -1,0 +1,43 @@
+.main{
+    margin-top: 100px;
+    /*text-align: center;*/
+}
+
+.search-input{
+    width: 400px;
+    /*height: 24px; */     /* line-height should be used because some browsers don't honor the CSS height rule */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 30px;
+    padding-left: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 24px;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+}
+
+.logo-img{
+    width: 300px;
+    display: block;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn{
+    color: #222222;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;          /* userway.org/contrast use contrast checker to check the contrast between foreground and background color of the button */
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border: none;
+    border-radius: 4px;
+    background: #dfe1e5;
+    font-size: 14px;
+
+}
