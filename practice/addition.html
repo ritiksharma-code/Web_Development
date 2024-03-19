@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Add Numbers</title>
+<style>
+    table {
+        border-collapse: collapse;
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: darkgrey;
+    }
+    body{
+        text-align: center;
+        background-color: lightgray;
+    }
+    th, td {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: center;
+    }
+    button, input[type="submit"] {
+    display: block;
+    width: 100;
+    margin: 1em auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 1.1rem;
+    border-radius: 50px;
+    background-color: #3b3b4f;
+    border-color: rgb(255, 255, 255);
+    color: white;
+  }
+  input{
+    background-color: bl;
+  }
+</style>
+</head>
+<body>
+    <h1 style="font-family: sans-serif;">Addition</h1>
+    <table>
+        <tr>
+            <th>Number 1</th>
+            <td><input type="number" id="num1" required placeholder="Enter first number"></td>
+        </tr>
+        <tr>
+            <th>Number 2</th>
+            <td><input type="number" id="num2" required placeholder="Enter second number""></td>
+        </tr>
+        <tr>
+            <th>Sum</th>
+            <td id="sum"></td>
+        </tr>
+    </table>
+    <br>
+    <button onclick="calculateSum()">Add</button>
+
+    <script>
+        function calculateSum() {
+            var num1 = parseInt(document.getElementById('num1').value);
+            var num2 = parseInt(document.getElementById('num2').value);
+            var sum = num1 + num2;
+            document.getElementById('sum').textContent = sum;
+        }
+    </script>
+</body>
+</html>

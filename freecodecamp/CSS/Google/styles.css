@@ -26,11 +26,16 @@
     margin-right: auto;
 }
 
+.btn-wrapper{
+    display: flex;
+    justify-content: center;
+}
+
 .btn{
     color: #222222;
     margin-top: 30px;
-    margin-left: auto;
-    margin-right: auto;          /* userway.org/contrast use contrast checker to check the contrast between foreground and background color of the button */
+    margin-left: 4px;
+    margin-right: 4px;           /* userway.org/contrast use contrast checker to check the contrast between foreground and background color of the button */
     padding-left: 16px;
     padding-right: 16px;
     padding-top: 8px;
@@ -41,3 +46,4 @@
     font-size: 14px;
 
 }
+
