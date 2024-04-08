@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Enter any number:  <input type="number" id="num"></h3>
+    <button onclick="Table()">Generate</button>&nbsp&nbsp<button onclick="reset()">Reset</button>
+    <h3><p id="print"></p></h3>
+
+    <script>
+        function Table() {
+            var num = parseInt(document.getElementById('num').value);
+            var TablePrint = "";
+            for(let i = 1; i<=10; i++)
+            {
+                var ans = num*i;
+                TablePrint += num+" x "+i+" = " + ans + "<br>";
+                document.getElementById("print").innerHTML = TablePrint;
+            }
+        }
+        function reset() {
+            document.getElementById("num").value="";
+            document.getElementById("print").innerText = "";
+        }
+    </script>
+</body>
+</html>
