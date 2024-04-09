@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Selector</title>
+</head>
+<body style="text-align: center; background-color: lightgrey;">
+    <h1 style="font-family: 'Courier New', Courier, monospace;">Image Selector 🐈</h1><br>
+    <div id="showimage"></div>
+    <p><button onclick="prev()">Previous</button>&nbsp&nbsp<button onclick="next()">Next</button></p>
+    <script>
+        const images = ['images/1.jpg', 'images/2.jpg', 'images/3.jpg', 'images/4.jpg', 'images/5.jpg', 'images/6.jpg'];
+        const container = document.getElementById('showimage');
+
+        let i = 0;
+        displayimage(i);
+        function prev()
+        {
+            if(i==0)
+            {
+                i = 5;
+                displayimage(i);
+            }
+            else if(i>0&&i<=5)
+            {
+                i--;
+                displayimage(i);
+            }
+            
+        }
+        function next()
+        {
+            if(i==5)
+            {
+                i = 0;
+                displayimage(i);
+            }
+            else if(i>=0&&i<5)
+            {
+                
+                i++;
+                displayimage(i);
+            }
+        }
+        function displayimage(i)
+        {
+            const img = document.createElement('img');
+            img.src = images[i];
+            img.style.width = '400px';
+            img.style.height = '400px';
+            container.innerHTML=" ";
+            container.appendChild(img);
+            console.log(img.src);
+        }
+    </script>
+</body>
+</html>
